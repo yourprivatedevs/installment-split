@@ -1,0 +1,51 @@
+{
+  "name": "installment-split",
+  "version": "1.0.0",
+  "description": "Split a money total into installments, cent-accurate, in integer minor units. Zero dependencies.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "pretest": "tsc -p tsconfig.test.json",
+    "test": "node --test dist-test/test/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "money",
+    "installments",
+    "payment-plan",
+    "rounding",
+    "currency",
+    "minor-units",
+    "typescript"
+  ],
+  "author": "Your Private Dev",
+  "license": "MIT",
+  "homepage": "https://github.com/yourprivatedevs/installment-split#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourprivatedevs/installment-split.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourprivatedevs/installment-split/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2"
+  }
+}
